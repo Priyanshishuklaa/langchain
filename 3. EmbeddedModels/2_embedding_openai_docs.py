@@ -1,9 +1,9 @@
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import AzureOpenAIEmbeddings
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
-embeddings=OpenAIEmbeddings(model='text-embedding-3-large', dimensions=32)
+embeddings=AzureOpenAIEmbeddings(model='text-embedding-ada-002')
 
 documents=["Delhi is the capital of India",
            "Mumbai is the financial capital of India",
