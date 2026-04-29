@@ -23,5 +23,7 @@ s=model.with_structured_output(Review)
 res=s.invoke("The hardware is great, but the software feels bloated. There are too many pre-installed apps that I can't remove. Also, the UI looks outdated compared to other brands. Hoping for a software update to fix this.")
 
 print(res)
+print('--------------------------------------')
 print(res['summary'])
+print('--------------------------------------')
 print(res['sentiment'])
