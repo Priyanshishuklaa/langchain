@@ -6,7 +6,7 @@ import os
 
 HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 llm = HuggingFaceEndpoint(
-    repo_id="google/gemma-2-2b-it",
+    repo_id="meta-llama/Llama-3.1-8B-Instruct",
     huggingfacehub_api_token=HF_TOKEN
 )
 
